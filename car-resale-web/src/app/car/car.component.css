@@ -1,0 +1,27 @@
+
+.dateAdded{
+	float: right;
+	font-size: 20px;
+}
+.price{
+	margin-left: 20px;
+}
+.carDetailsTab{
+	font-size: 20px;
+	border: 1px solid;
+    border: 1px solid;
+    border-radius: 3px;
+    padding: 7px;
+}
+.wareHouseLocation{
+    width: 35px;
+    height: 35px;
+    background-size: contain;
+	background-repeat: no-repeat;
+}
+.carDetailsTab p{
+	text-align: left;
+}
+.addToCartBtn{
+	margin-top: 30%;
+}   

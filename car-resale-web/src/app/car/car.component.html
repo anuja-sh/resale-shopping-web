@@ -1,0 +1,20 @@
+<header>
+    <span> {{car.make}} {{car.model}} </span>
+    <span [className]="'price'"> ${{car.price}}</span>
+    <span [className]="'dateAdded'">Added on {{getDateAdded(car.dateAdded)}}</span>
+</header>
+<div [className]="'container-fluid'">
+    <div *ngIf="!isCollapsed" [className]="' carDetailsTab row'">
+        <div [className]="'col'">
+            <p>License : {{getLicenseStatus(car.licensed)}}</p>
+            <p>Location : {{car.location}}</p>
+            <p>Year model : {{car.yearModel}}</p>
+            <p>WareHouse : {{wareHouse.name}}</p>
+            <p>WareHouse Location :
+                <a target="_blank" href="{{getMapLocation(wareHouse.location.latitude, wareHouse.location.longitude)}}">
+                    <img [className]="'wareHouseLocation'" [src]="'../../assets/images/location-icon.png'" />
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
