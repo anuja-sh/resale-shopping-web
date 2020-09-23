@@ -2,6 +2,8 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Car } from '../model/car'
 import { WareHouse } from '../model/wareHouse';
 import { ResaleService } from '../services/resale.service';
+import { InteractionService } from '../services/interaction.service';
+
 
 
 @Component({
@@ -15,7 +17,7 @@ export class CarComponent implements OnInit {
   wareHouse: WareHouse;
   isCollapsed: boolean = true;
 
-  constructor(private resaleService: ResaleService) { }
+  constructor(private resaleService: ResaleService, private interactionService: InteractionService) { }
 
   ngOnInit(): void {
   }
@@ -38,5 +40,10 @@ export class CarComponent implements OnInit {
   }
   getMapLocation(lat, long) {
     return `http://www.google.com/maps/place/${lat},${long}`;
+  }
+
+  addToCart(car) {
+    this.car.isAddedToCart = true;
+    this.interactionService.addToCart(car);
   }
 }

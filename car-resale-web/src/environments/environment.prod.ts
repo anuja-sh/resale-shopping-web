@@ -5,5 +5,6 @@ export const environment = {
   urls: {
     getAllCars: `${server}/resale-cars/cars?order=asc&property=date_added`,
     getWareHouseDetails:`${server}/resale-cars/wareHouse`,
+    checkout:`${server}/checkout`,
   }
 };
