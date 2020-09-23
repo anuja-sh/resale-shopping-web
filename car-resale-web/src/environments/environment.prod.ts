@@ -1,4 +1,4 @@
-const server = "http://localhost:9090";
+const server = "http://localhost:8080";
 export const environment = {
   production: true,
 
