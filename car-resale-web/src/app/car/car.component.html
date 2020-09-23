@@ -1,4 +1,4 @@
-<header>
+<header (click)="getWareHouseDetails(car.id)">
     <span> {{car.make}} {{car.model}} </span>
     <span [className]="'price'"> ${{car.price}}</span>
     <span [className]="'dateAdded'">Added on {{getDateAdded(car.dateAdded)}}</span>
