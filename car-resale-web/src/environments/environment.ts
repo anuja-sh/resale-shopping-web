@@ -7,8 +7,8 @@ export const environment = {
   production: false,
 
   urls: {
-    getAllCars: `${server}/cars?order=asc&property=date_added`,
-    getWareHouseDetails:`${server}/wareHouse`,
+    getAllCars: `${server}/resale-cars/cars?order=asc&property=date_added`,
+    getWareHouseDetails:`${server}/resale-cars/wareHouse`,
   }
 };
 
